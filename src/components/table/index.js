@@ -18,8 +18,8 @@ const Table = () => {
             <img src={imageBack} className="card-back" alt="" />
           </div>
           <div className="table-cards-player3">
-            <img src={imageBack} className="card-back" alt="" />
-            <img src={imageBack} className="card-back" alt="" />
+            <div><img src={imageBack} className="card-back" alt="" /></div>
+            <div><img src={imageBack} className="card-back" alt="" /></div>
           </div>
           <div className="table-cards-player4">
             <img src={imageBack} className="card-back" alt="" />

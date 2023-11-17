@@ -1,10 +1,9 @@
-import { image1 } from "../logic/rules";
-
 export const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
 
-export const cleanup1 = (player) => {
+export const cleanup = (player) => {
     player.map((cards) => {
         cards.map((c)=>{
+            console.log(c)
             return c;
         })
         return cards;
@@ -14,20 +13,9 @@ export const cleanup1 = (player) => {
 
 
 export const deal = (player) => {
-  player.map((a) => {
-    a.map((b) => {
-        b.map((c) => {
-            return <div>{image1}</div>
+  const cards = player.map((a) => {
+            return <div key={a.cardID}><img className="card" src={a.img} alt={a.name}/></div>
         })
-        return <p>hello</p>;
-    })  
-    return <p>hello</p>; 
-})
+return cards;
 }
-
-// export const firstDeal = (sd, playerCount = 1) => {
-//     let shuffledDeck = shuffle(sd);
-//     deal(shuffledDeck.splice(0, (3 * playerCount)));
-//     // console.log(shuffledDeck)
-//   };
 

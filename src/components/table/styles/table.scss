@@ -1,5 +1,5 @@
 html{
-    // background: linear-gradient(0deg,  black 50%,blue    );
+    background: linear-gradient(0deg,  black 50%,blue    );
 }
 .stage{
     height:100vh;
@@ -7,60 +7,70 @@ html{
     align-items: center;
 }
 .table{
-    width:800px;
+    width:700px;
     height:300px;
     background-color:darkgreen;
     border-radius:40%;
-    border:40px double rgb(103, 50, 12);
-    margin-top:32px;
+    border:40px double rgb(59, 28, 6);
+    padding:0;
 
     &-cards{
-        display:flex;
-        margin:100px;
+        position:relative;
+        margin:0;
+        padding:0;
         
         &-player1{
-            position:absolute;
-            top:280px;
-            left:600px;
+            position:relative;
+            display:flex;
+            top:225px;
+            left:390px;
+
         }
         &-player2{
-            position:absolute;
-            top:280px;
-            left:375px;
+            position:relative;
+            display:inline-block;
+            top:155px;
+            left:225px;
         }
         &-player3{
-            position:absolute;
-            top:260px;
-            left:200px;
-            transform:rotate(15deg);
+            position:relative;
+            display:flex;
+            transform:rotate(17deg);
+            top:150px;
+            left:70px;
         }
         &-player4{
-            position:absolute;
-            top:120px;
-            left:200px;
-            transform: rotate(-15deg);
+            position:relative;
+            display:flex;
+            transform: rotate(-17deg);
+            top:-280px;
+            left:70px;
         }
         &-player5{
-            position:absolute;
-            top:90px;
-            left:375px;
+            position:relative;
+            display:flex;
+            top:-280px;
+            left:225px;
         }
         &-player6{
-            position:absolute;
-            top:90px;
-            left:600px;
+            position:relative;
+            display:flex;
+            top:-350px;
+            left:390px;
         }
         &-player7{
-            position:absolute;
-            top:120px;
-            left:800px;
-            transform:rotate(15deg)
+            position:relative;
+            display:flex;
+            top:-306px;
+            left:530px;
+            transform:rotate(17deg)
         }
         &-player8{
-            position:absolute;
-            top:250px;
-            left:800px;
-            transform:rotate(-15deg)
+            position:relative;
+            display:flex;
+            top:-385px;
+            left:530px;
+            transform:rotate(-17deg)
         }
 
     }

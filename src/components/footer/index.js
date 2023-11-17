@@ -1,14 +1,14 @@
 import "./styles/footer.scss";
 import { deal, shuffle } from "../utils";
-import { deck, image1 } from "../../logic/rules";
+import { deck } from "../../logic/rules";
 import { useState } from "react";
-
-
-// import PlayerNav from "../playerNav/index";
+import PlayerNav from "../playerNav/index";
+import { cleanup } from "@testing-library/react";
 
 const Footer = () => {
   const [playerCount, setPlayerCount] = useState(1);
-
+  const [bid, setBid] = useState(0);
+  
   function readyDeck(deck) {
     const shuffledDeck = shuffle(deck);
     return shuffledDeck;
@@ -17,10 +17,15 @@ const Footer = () => {
     let spentCards = [];
     cards.splice(0, 3 * pc).map((pcs) => {
       spentCards.push(pcs);
+      return null;
     });
     let fullDeck = { dealtCards: spentCards, remainingDeck: cards };
     return fullDeck;
   }
+
+  function subsequentDeals(){
+
+  };
 
   function playerHand(cards, pc) {
     let p1 = [];
@@ -114,14 +119,16 @@ const Footer = () => {
 
   const info = { deck: readyDeck(deck) };
   const initialDeal = hand(info.deck, playerCount);
- let playerCards
+//   const playerHands = playerHand(initialDeal.dealtCards, playerCount)
+//   const test = cleanup(playerHands)
+//   console.log(test);
+  const playerCards = deal(initialDeal.dealtCards)
 
   return (
     <div className="footer">
       <div className="footer-container">
-        {/* <PlayerNav bid={bid} /> */}
-        <button onClick={() => { playerCards = playerHand(initialDeal.dealtCards, playerCount)}}></button>
-        <div className="footer__card-layout">{playerCards?deal(playerCards):null}</div>
+        <PlayerNav bid={bid} playerCards={playerCards}/>
+        <div className="footer__card-layout">{playerCards}</div>
       </div>
     </div>
   );

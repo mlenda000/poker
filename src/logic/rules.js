@@ -60,7 +60,8 @@ export const deck = [
     name: "2 of Spades",
     img: image1,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 2,
@@ -70,7 +71,8 @@ export const deck = [
     name: "3 of Spades",
     img: image2,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 3,
@@ -80,7 +82,8 @@ export const deck = [
     name: "4 of Spades",
     img: image3,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 4,
@@ -90,7 +93,8 @@ export const deck = [
     name: "5 of Spades",
     img: image4,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 5,
@@ -100,7 +104,8 @@ export const deck = [
     name: "6 of Spades",
     img: image5,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 6,
@@ -110,7 +115,8 @@ export const deck = [
     name: "7 of Spades",
     img: image6,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 7,
@@ -120,7 +126,8 @@ export const deck = [
     name: "8 of Spades",
     img: image7,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 8,
@@ -130,7 +137,8 @@ export const deck = [
     name: "9 of Spades",
     img: image8,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 9,
@@ -140,7 +148,8 @@ export const deck = [
     name: "10 of Spades",
     img: image9,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 10,
@@ -150,7 +159,8 @@ export const deck = [
     name: "Jack of Spades",
     img: image10,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 11,
@@ -160,7 +170,8 @@ export const deck = [
     name: "Queen of Spades",
     img: image11,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 12,
@@ -170,7 +181,8 @@ export const deck = [
     name: "King of Spades",
     img: image12,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 13,
@@ -180,7 +192,8 @@ export const deck = [
     name: "Ace of Spades",
     img: image13,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 14,
@@ -190,7 +203,8 @@ export const deck = [
     name: "2 of Hearts",
     img: image14,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 15,
@@ -200,7 +214,8 @@ export const deck = [
     name: "3 of Hearts",
     img: image15,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 16,
@@ -210,7 +225,8 @@ export const deck = [
     name: "4 of Hearts",
     img: image16,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 17,
@@ -220,7 +236,8 @@ export const deck = [
     name: "5 of Hearts",
     img: image17,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 18,
@@ -230,7 +247,8 @@ export const deck = [
     name: "6 of Hearts",
     img: image18,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 19,
@@ -240,7 +258,8 @@ export const deck = [
     name: "7 of Hearts",
     img: image19,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 20,
@@ -250,7 +269,8 @@ export const deck = [
     name: "8 of Hearts",
     img: image20,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 21,
@@ -260,7 +280,8 @@ export const deck = [
     name: "9 of Hearts",
     img: image21,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 22,
@@ -270,7 +291,8 @@ export const deck = [
     name: "10 of Hearts",
     img: image22,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 23,
@@ -280,7 +302,8 @@ export const deck = [
     name: "Jack of Hearts",
     img: image23,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 24,
@@ -290,7 +313,8 @@ export const deck = [
     name: "Queen of Hearts",
     img: image24,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 25,
@@ -300,7 +324,8 @@ export const deck = [
     name: "King of Hearts",
     img: image25,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 26,
@@ -310,7 +335,8 @@ export const deck = [
     name: "Ace of Hearts",
     img: image26,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 27,
@@ -320,7 +346,8 @@ export const deck = [
     name: "2 of Clubs",
     img: image27,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 28,
@@ -330,7 +357,8 @@ export const deck = [
     name: "3 of Clubs",
     img: image28,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 29,
@@ -340,7 +368,8 @@ export const deck = [
     name: "4 of Clubs",
     img: image29,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 30,
@@ -350,7 +379,8 @@ export const deck = [
     name: "5 of Clubs",
     img: image30,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 31,
@@ -360,7 +390,8 @@ export const deck = [
     name: "6 of Clubs",
     img: image31,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 32,
@@ -370,7 +401,8 @@ export const deck = [
     name: "7 of Clubs",
     img: image32,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 33,
@@ -380,7 +412,8 @@ export const deck = [
     name: "8 of Clubs",
     img: image33,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 34,
@@ -390,7 +423,8 @@ export const deck = [
     name: "9 of Clubs",
     img: image34,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 35,
@@ -400,7 +434,8 @@ export const deck = [
     name: "10 of Clubs",
     img: image35,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 36,
@@ -410,7 +445,8 @@ export const deck = [
     name: "Jack of Clubs",
     img: image36,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 37,
@@ -420,7 +456,8 @@ export const deck = [
     name: "Queen of Clubs",
     img: image37,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 38,
@@ -430,7 +467,8 @@ export const deck = [
     name: "King of Clubs",
     img: image38,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 39,
@@ -440,7 +478,8 @@ export const deck = [
     name: "Ace of Clubs",
     img: image39,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 40,
@@ -450,7 +489,8 @@ export const deck = [
     name: "2 of Diamonds",
     img: image40,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 41,
@@ -460,7 +500,8 @@ export const deck = [
     name: "3 of Diamonds",
     img: image41,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 42,
@@ -470,7 +511,8 @@ export const deck = [
     name: "4 of Diamonds",
     img: image42,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 43,
@@ -480,7 +522,8 @@ export const deck = [
     name: "5 of Diamonds",
     img: image43,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 44,
@@ -490,7 +533,8 @@ export const deck = [
     name: "6 of Diamonds",
     img: image44,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 45,
@@ -500,7 +544,8 @@ export const deck = [
     name: "7 of Diamonds",
     img: image45,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 46,
@@ -510,7 +555,8 @@ export const deck = [
     name: "8 of Diamonds",
     img: image46,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 47,
@@ -520,7 +566,8 @@ export const deck = [
     name: "9 of Diamonds",
     img: image47,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 48,
@@ -530,7 +577,8 @@ export const deck = [
     name: "10 of Diamonds",
     img: image48,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 49,
@@ -540,7 +588,8 @@ export const deck = [
     name: "Jack of Diamonds",
     img: image49,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 50,
@@ -550,7 +599,8 @@ export const deck = [
     name: "Queen of Diamonds",
     img: image50,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 51,
@@ -560,7 +610,8 @@ export const deck = [
     name: "King of Diamonds",
     img: image51,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
   {
     cardID: 52,
@@ -570,7 +621,8 @@ export const deck = [
     name: "Ace of Diamonds",
     img: image52,
     isWild: false,
-    isFaceUp: true
+    isFaceUp: true,
+    canBuy:false
   },
 ];
 

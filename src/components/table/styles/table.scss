@@ -1,0 +1,73 @@
+html{
+    // background: linear-gradient(0deg,  black 50%,blue    );
+}
+.stage{
+    height:100vh;
+    display:flex;
+    align-items: center;
+}
+.table{
+    width:800px;
+    height:300px;
+    background-color:darkgreen;
+    border-radius:40%;
+    border:40px double rgb(103, 50, 12);
+    margin-top:32px;
+
+    &-cards{
+        display:flex;
+        margin:100px;
+        
+        &-player1{
+            position:absolute;
+            top:280px;
+            left:600px;
+        }
+        &-player2{
+            position:absolute;
+            top:280px;
+            left:375px;
+        }
+        &-player3{
+            position:absolute;
+            top:260px;
+            left:200px;
+            transform:rotate(15deg);
+        }
+        &-player4{
+            position:absolute;
+            top:120px;
+            left:200px;
+            transform: rotate(-15deg);
+        }
+        &-player5{
+            position:absolute;
+            top:90px;
+            left:375px;
+        }
+        &-player6{
+            position:absolute;
+            top:90px;
+            left:600px;
+        }
+        &-player7{
+            position:absolute;
+            top:120px;
+            left:800px;
+            transform:rotate(15deg)
+        }
+        &-player8{
+            position:absolute;
+            top:250px;
+            left:800px;
+            transform:rotate(-15deg)
+        }
+
+    }
+}
+.card-back{
+    width:40px;
+    height:70px;
+    border-radius: 5px;
+    background-color: blue;
+}

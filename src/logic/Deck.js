@@ -51,7 +51,7 @@ import image50 from "../images/queen_of_diamonds2.png"
 import image51 from "../images/king_of_diamonds2.png"
 import image52 from "../images/ace_of_diamonds.png"
 
-export const deck = [
+export const starterDeck = [
   {
     cardID: 1,
     rank: 2,

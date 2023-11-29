@@ -1,134 +1,35 @@
 import "./styles/footer.scss";
-import { deal, shuffle } from "../utils";
-import { deck } from "../../logic/rules";
-import { useState } from "react";
 import PlayerNav from "../playerNav/index";
-import { cleanup } from "@testing-library/react";
 
-const Footer = () => {
-  const [playerCount, setPlayerCount] = useState(1);
-  const [bid, setBid] = useState(0);
-  
-  function readyDeck(deck) {
-    const shuffledDeck = shuffle(deck);
-    return shuffledDeck;
-  }
-  function hand(cards, pc) {
-    let spentCards = [];
-    cards.splice(0, 3 * pc).map((pcs) => {
-      spentCards.push(pcs);
-      return null;
-    });
-    let fullDeck = { dealtCards: spentCards, remainingDeck: cards };
-    return fullDeck;
-  }
-
-  function subsequentDeals(){
-
-  };
-
-  function playerHand(cards, pc) {
-    let p1 = [];
-    let p2 = [];
-    let p3 = [];
-    let p4 = [];
-    let p5 = [];
-    let p6 = [];
-    let p7 = [];
-    let p8 = [];
-    let hands = [];
-
-    if (pc === 8) {
-      for (let i = 0; cards.length > i; ) {
-        p8.push(cards.splice(0, 1));
-        p7.push(cards.splice(0, 1));
-        p6.push(cards.splice(0, 1));
-        p5.push(cards.splice(0, 1));
-        p4.push(cards.splice(0, 1));
-        p3.push(cards.splice(0, 1));
-        p2.push(cards.splice(0, 1));
-        p1.push(cards.splice(0, 1));
-      }
-      hands.push(p1, p2, p3, p4, p5, p6, p7, p8);
-      return hands;
-    } else if (pc === 7) {
-      for (let i = 0; cards.length > i; ) {
-        p7.push(cards.splice(0, 1));
-        p6.push(cards.splice(0, 1));
-        p5.push(cards.splice(0, 1));
-        p4.push(cards.splice(0, 1));
-        p3.push(cards.splice(0, 1));
-        p2.push(cards.splice(0, 1));
-        p1.push(cards.splice(0, 1));
-      }
-      hands.push(p1, p2, p3, p4, p5, p6, p7);
-      return hands;
-    } else if (pc === 6) {
-      for (let i = 0; cards.length > i; ) {
-        p6.push(cards.splice(0, 1));
-        p5.push(cards.splice(0, 1));
-        p4.push(cards.splice(0, 1));
-        p3.push(cards.splice(0, 1));
-        p2.push(cards.splice(0, 1));
-        p1.push(cards.splice(0, 1));
-      }
-      hands.push(p1, p2, p3, p4, p5, p6);
-      return hands;
-    } else if (pc === 5) {
-      for (let i = 0; cards.length > i; ) {
-        p5.push(cards.splice(0, 1));
-        p4.push(cards.splice(0, 1));
-        p3.push(cards.splice(0, 1));
-        p2.push(cards.splice(0, 1));
-        p1.push(cards.splice(0, 1));
-      }
-      hands.push(p1, p2, p3, p4, p5);
-      return hands;
-    } else if (pc === 4) {
-      for (let i = 0; cards.length > i; ) {
-        p4.push(cards.splice(0, 1));
-        p3.push(cards.splice(0, 1));
-        p2.push(cards.splice(0, 1));
-        p1.push(cards.splice(0, 1));
-      }
-      hands.push(p1, p2, p3, p4);
-      return hands;
-    } else if (pc === 3) {
-      for (let i = 0; cards.length > i; ) {
-        p3.push(cards.splice(0, 1));
-        p2.push(cards.splice(0, 1));
-        p1.push(cards.splice(0, 1));
-      }
-      hands.push(p1, p2, p3);
-      return hands;
-    } else if (pc === 2) {
-      for (let i = 0; cards.length > i; ) {
-        p2.push(cards.splice(0, 1));
-        p1.push(cards.splice(0, 1));
-      }
-      hands.push(p1, p2);
-      return hands;
-    } else if (pc === 1) {
-      for (let i = 0; cards.length > i; ) {
-        p1.push(cards.splice(0, 1));
-      }
-      hands.push(p1);
-      return hands;
-    }
-  }
-
-  const info = { deck: readyDeck(deck) };
-  const initialDeal = hand(info.deck, playerCount);
-//   const playerHands = playerHand(initialDeal.dealtCards, playerCount)
-//   const test = cleanup(playerHands)
-//   console.log(test);
-  const playerCards = deal(initialDeal.dealtCards)
+const Footer = (props) => {
+  const {
+    bet,
+    setBet,
+    currentPlayer,
+    bettingRound,
+    dealCards,
+    startNewRound,
+    setShuffledDeck
+  } = props;
 
   return (
     <div className="footer">
       <div className="footer-container">
-        <PlayerNav bid={bid} playerCards={playerCards}/>
-        <div className="footer__card-layout">{playerCards}</div>
+        <PlayerNav
+          bet={bet}
+          setBet={setBet}
+          bettingRound={bettingRound}
+          dealCards={dealCards}
+          startNewRound={startNewRound}
+          setShuffledDeck={setShuffledDeck}
+        />
+        <div className="footer__card-layout">
+          {currentPlayer?.hand?.map((card) => (
+            <div key={card.cardID}>
+              <img className="card" src={card.img} alt={card.name} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

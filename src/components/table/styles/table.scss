@@ -5,6 +5,73 @@ html{
     height:100vh;
     display:flex;
     align-items: center;
+    &-container{
+        overflow: hidden;
+        
+    }
+}
+.player1{
+    z-index:1;
+    position: relative;
+    top:-390px;
+    left:345px;
+    height:175px;
+}
+.player2{
+    z-index:1;
+    position: relative;
+    top:-215px;
+    left:175px;
+    height:175px;
+}
+.player3{
+    z-index:1;
+    position: relative;
+    top:-100px;
+    left:-25px;
+    height:175px;
+
+}
+.player4{
+    z-index:-1;
+    position: relative;
+    height:175px;
+    top:575px;
+    left:10px;
+}
+.player5{
+    z-index:-1;
+    position: relative;
+    top:370px;
+    left:180px;
+    height:175px;
+}
+.player6{
+    z-index:-1;
+    position: relative;
+    top:190px;
+    left:350px;
+    height:175px;
+}
+.player7{
+    z-index:-1;
+    position: relative;
+    top:40px;
+    left:550px;
+    height:175px;
+    
+}
+.player8{
+    z-index:1;
+    position: relative;
+    top:-590px;
+    left:555px;
+    height:175px;
+}
+img{
+    width:auto;
+    max-height:175px;
+    height:100%;
 }
 .table{
     width:700px;
@@ -28,15 +95,15 @@ html{
         }
         &-player2{
             position:relative;
-            display:inline-block;
-            top:155px;
+            display:flex;
+            top:150px;
             left:225px;
         }
         &-player3{
             position:relative;
             display:flex;
             transform:rotate(17deg);
-            top:150px;
+            top:145px;
             left:70px;
         }
         &-player4{
@@ -55,29 +122,39 @@ html{
         &-player6{
             position:relative;
             display:flex;
-            top:-350px;
+            top:-360px;
             left:390px;
         }
         &-player7{
             position:relative;
             display:flex;
-            top:-306px;
+            top:-320px;
             left:530px;
             transform:rotate(17deg)
         }
         &-player8{
             position:relative;
             display:flex;
-            top:-385px;
+            top:-410px;
             left:530px;
             transform:rotate(-17deg)
         }
 
     }
+    .card-container{
+        margin-left:-25px;
+    }
+    .card{
+        width:40px;
+        height:70px;
+        border-radius: 5px;
+
+    }
 }
 .card-back{
+    
     width:40px;
     height:70px;
     border-radius: 5px;
-    background-color: blue;
+    
 }
